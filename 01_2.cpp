@@ -1,6 +1,6 @@
 #include <stdio.h>
 const int MAX_CHAR = 50;
-void num_invert_str( int n, char str[])
+void NIS( int n, char str[])
 {	
     char tmp[MAX_CHAR];
     int i = 0;
@@ -26,7 +26,7 @@ int main(void)
     int number;
     scanf("%d ",&number);
     scanf("%[^\n]%*c", words);
-    num_invert_str( number, words);
+    NIS( number, words);
     printf("%s", words);
     return 0;
 }
